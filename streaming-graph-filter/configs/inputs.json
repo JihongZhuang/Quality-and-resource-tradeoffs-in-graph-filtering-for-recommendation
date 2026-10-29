@@ -1,0 +1,86 @@
+{
+  "inputs": {
+    "yelp2018/R_train_full_official.npz": {
+      "relative_path": "yelp2018/R_train_full_official.npz",
+      "bytes": 2886556,
+      "sha256": "cb920981ebe4b22b60613301ec8ce243600d6b6712f979ae6d41d18ba03a9707",
+      "shape": [
+        31668,
+        38048
+      ],
+      "nnz": 1237259,
+      "dtype": "float64",
+      "binary": true,
+      "canonical_csr": true,
+      "zero_rows": 0,
+      "sparse_content_sha256": "040a7083a805927593acd1688cc351fabf4c31ce76838be125d2ecf21c62328f"
+    },
+    "yelp2018/R_test.npz": {
+      "relative_path": "yelp2018/R_test.npz",
+      "bytes": 839843,
+      "sha256": "90a3d5ae123e89b73fe6d5b93d6e5407f5e33e20948b7be8e735bad6ec0ca74f",
+      "shape": [
+        31668,
+        38048
+      ],
+      "nnz": 324147,
+      "dtype": "float64",
+      "binary": true,
+      "canonical_csr": true,
+      "zero_rows": 0,
+      "sparse_content_sha256": "a9b617cd1283f106a1d4855c49969a5b535b49bf805961154befdfd311fa4c0b"
+    },
+    "amazon-book/R_train_full_official.npz": {
+      "relative_path": "amazon-book/R_train_full_official.npz",
+      "bytes": 5772815,
+      "sha256": "2ed597e4524047133a8153972e3268b168298205611014b80a7895c60bfe4408",
+      "shape": [
+        52643,
+        91599
+      ],
+      "nnz": 2380730,
+      "dtype": "float64",
+      "binary": true,
+      "canonical_csr": true,
+      "zero_rows": 0,
+      "sparse_content_sha256": "58f9d974d4e5d51e1ac392b90ff82224ecbfc6a616ef235a940dc5a0ddb85823"
+    },
+    "amazon-book/R_test.npz": {
+      "relative_path": "amazon-book/R_test.npz",
+      "bytes": 1612174,
+      "sha256": "83c46a7c9f6319fe23f6c57075875143b0710f570806977604e968bcc4b2cae0",
+      "shape": [
+        52643,
+        91599
+      ],
+      "nnz": 603378,
+      "dtype": "float64",
+      "binary": true,
+      "canonical_csr": true,
+      "zero_rows": 4,
+      "sparse_content_sha256": "faa307d3976fc354393e52aed37d846e028659d550b6e24eaf072031f42c8680"
+    }
+  },
+  "datasets": {
+    "yelp2018": {
+      "users": 31668,
+      "items": 38048,
+      "train_nnz": 1237259,
+      "empty_test_user_count": 0
+    },
+    "amazon-book": {
+      "users": 52643,
+      "items": 91599,
+      "train_nnz": 2380730,
+      "empty_test_user_count": 4
+    }
+  },
+  "text_to_npz_rule_recovered": true,
+  "original_review_events_to_lightgcn_text_reconstruction_complete": false,
+  "upstream_commit_or_archive_version": null,
+  "upstream_original_id_mapping_derivation": null,
+  "upstream_split_seed_and_algorithm": null,
+  "rights_and_redistribution": "Not established by these local records. Matrices, interaction text, mappings and per-user output are excluded.",
+  "local_processed_text_to_npz_exact_reconstruction": true,
+  "reconstruction_report": "checks/input_reconstruction.json"
+}

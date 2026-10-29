@@ -1,0 +1,40 @@
+{
+  "files": {
+    "yelp2018/train.txt": {
+      "bytes": 6904880,
+      "sha256": "1e9568725a9e833d0ac3bae01c94cd95367f73b3bb6104fd26b5f65ea5054093"
+    },
+    "yelp2018/test.txt": {
+      "bytes": 1986152,
+      "sha256": "9cd9b37926cd1447a06625ffa7914527573fb097c10cb0bbdb1d1b8ded3742fe"
+    },
+    "yelp2018/user_list.txt": {
+      "bytes": 907278,
+      "sha256": "4931519d8b3c40d71a34cc386c3287b6d63c1be9a82edd7ee6bfad765e640778"
+    },
+    "yelp2018/item_list.txt": {
+      "bytes": 1092298,
+      "sha256": "1091bc824b60561906df552f2f7cb3ec61767b1e46fd4386b44400ae49712007"
+    },
+    "amazon-book/train.txt": {
+      "bytes": 14125691,
+      "sha256": "529066026085919381acd4ce19f69e9eafa4af3fef1a10119ea5551cc2ef8530"
+    },
+    "amazon-book/test.txt": {
+      "bytes": 3848611,
+      "sha256": "6250754994dd953b91b48dccdd77a73f318e0634b4757c2abfcc9d33a54ab0f5"
+    },
+    "amazon-book/user_list.txt": {
+      "bytes": 1080734,
+      "sha256": "b59cc7e4a1826e1eb313c4f0557bdafbb70661346d9c93911b97fe0e9fbd7078"
+    },
+    "amazon-book/item_list.txt": {
+      "bytes": 1546089,
+      "sha256": "8eee6caf6e666d95fc24ca8e0ec089ee90b1b2d1dc17933726359a6b3ecd62cb"
+    }
+  },
+  "role": "separately held LightGCN processed text and ID-list files; not original raw review events",
+  "source_attribution_in_local_README": "kuandeng/LightGCN Data/",
+  "upstream_commit_or_archive_version": null,
+  "attribution_independently_reverified_online": false
+}

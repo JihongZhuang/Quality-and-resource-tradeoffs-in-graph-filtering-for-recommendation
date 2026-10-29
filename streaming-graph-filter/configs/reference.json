@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "author_snapshot": {
+    "repository": "https://github.com/jindeok/Mem-GF",
+    "commit": "ef70fc4826543f84d6ca5ba2a8e8c5f0becd626e",
+    "commit_url": "https://github.com/jindeok/Mem-GF/tree/ef70fc4826543f84d6ca5ba2a8e8c5f0becd626e",
+    "source_included": false,
+    "files": {
+      "README.md": {
+        "sha256": "b43f319d49ad146f8d7be5a6d3f7d0f727ce03ab34dfbfb9e785d5e273c01790",
+        "bytes": 52,
+        "url": "https://raw.githubusercontent.com/jindeok/Mem-GF/ef70fc4826543f84d6ca5ba2a8e8c5f0becd626e/README.md"
+      },
+      "models.py": {
+        "sha256": "8e8c2826d3204d7272fd6d9636e67c98ee281b865c6226d436f6004658a8ded9",
+        "bytes": 18221,
+        "url": "https://raw.githubusercontent.com/jindeok/Mem-GF/ef70fc4826543f84d6ca5ba2a8e8c5f0becd626e/models.py"
+      },
+      "main.py": {
+        "sha256": "1840cf2a3b460b0c5bddf189e25ce51abf3f0dccca9aaba79ae1e6b358870a2e",
+        "bytes": 6212,
+        "url": "https://raw.githubusercontent.com/jindeok/Mem-GF/ef70fc4826543f84d6ca5ba2a8e8c5f0becd626e/main.py"
+      },
+      "utils.py": {
+        "sha256": "983aadbb06702d5b44d3026115fe6c6ae7b4b8632be77ac73fd873ac1002cb72",
+        "bytes": 20697,
+        "url": "https://raw.githubusercontent.com/jindeok/Mem-GF/ef70fc4826543f84d6ca5ba2a8e8c5f0becd626e/utils.py"
+      },
+      "memory_logger.py": {
+        "sha256": "569d0e7d02124bdb942f9c823877e24d0bce87c8dce2cc5e52f7544f04ed5e3b",
+        "bytes": 3831,
+        "url": "https://raw.githubusercontent.com/jindeok/Mem-GF/ef70fc4826543f84d6ca5ba2a8e8c5f0becd626e/memory_logger.py"
+      }
+    },
+    "required_definitions": {
+      "utils.py": [
+        "lanczos_algorithm",
+        "get_polynomial_coeffs",
+        "compute_T",
+        "polynomial_filter",
+        "csr2torch",
+        "normalize_sparse_adjacency_matrix_sparse"
+      ],
+      "models.py": [
+        "Mem_GF"
+      ]
+    },
+    "source_policy": "hash-check required original files, locate definitions by AST, compile exact source segments unchanged; do not replace beta indices or normalization"
+  },
+  "configs": {
+    "yelp_f5": {
+      "dataset": "yelp2018",
+      "filter": 5,
+      "gamma": 0.55,
+      "power": 0.9
+    },
+    "amazon_f2": {
+      "dataset": "amazon-book",
+      "filter": 2,
+      "gamma": 0.5,
+      "power": 0.9
+    },
+    "yelp_f2": {
+      "dataset": "yelp2018",
+      "filter": 2,
+      "gamma": 0.55,
+      "power": 0.9
+    },
+    "amazon_f5": {
+      "dataset": "amazon-book",
+      "filter": 5,
+      "gamma": 0.5,
+      "power": 0.9
+    }
+  },
+  "reference_inputs": {
+    "yelp2018": {
+      "train": {
+        "filename": "R_train_full_official.npz",
+        "bytes": 2886556,
+        "sha256": "cb920981ebe4b22b60613301ec8ce243600d6b6712f979ae6d41d18ba03a9707"
+      },
+      "test": {
+        "filename": "R_test.npz",
+        "bytes": 839843,
+        "sha256": "90a3d5ae123e89b73fe6d5b93d6e5407f5e33e20948b7be8e735bad6ec0ca74f"
+      },
+      "shape": [
+        31668,
+        38048
+      ],
+      "train_nnz": 1237259,
+      "empty_test_user_count": 0
+    },
+    "amazon-book": {
+      "train": {
+        "filename": "R_train_full_official.npz",
+        "bytes": 5772815,
+        "sha256": "2ed597e4524047133a8153972e3268b168298205611014b80a7895c60bfe4408"
+      },
+      "test": {
+        "filename": "R_test.npz",
+        "bytes": 1612174,
+        "sha256": "83c46a7c9f6319fe23f6c57075875143b0710f570806977604e968bcc4b2cae0"
+      },
+      "shape": [
+        52643,
+        91599
+      ],
+      "train_nnz": 2380730,
+      "empty_test_user_count": 4
+    }
+  }
+}

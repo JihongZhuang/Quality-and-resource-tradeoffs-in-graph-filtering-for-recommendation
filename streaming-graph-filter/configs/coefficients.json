@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "source_commit": "ef70fc4826543f84d6ca5ba2a8e8c5f0becd626e",
+  "source_file": "utils.py",
+  "source_sha256": "983aadbb06702d5b44d3026115fe6c6ae7b4b8632be77ac73fd873ac1002cb72",
+  "function": "get_polynomial_coeffs",
+  "function_utf8_sha256": "a0ffee6fd5af53cda8b7209c2cde3e023764db61b4d3dd5542882798bd9eb0ec",
+  "polynomial": "p(t) = sum_{k=1}^d a_k t^k; no constant term",
+  "coefficient_order": "ascending powers, starting at 1",
+  "precision": "JSON decimal round-trips Python float; binary64 hex and float32 representations supplied; tensor arithmetic uses float32",
+  "filters": {
+    "2": {
+      "coefficients_for_powers_1_through_d": [
+        2.0,
+        -1.0
+      ],
+      "python_binary64_hex": [
+        "0x1.0000000000000p+1",
+        "-0x1.0000000000000p+0"
+      ],
+      "float32_scalar_values": [
+        2.0,
+        -1.0
+      ],
+      "float32_little_endian_hex": [
+        "00000040",
+        "000080bf"
+      ]
+    },
+    "5": {
+      "coefficients_for_powers_1_through_d": [
+        7.974865109143177,
+        3.1018304070759397,
+        -11.201654823809385,
+        6.208991135386687,
+        -1.06302647725054
+      ],
+      "python_binary64_hex": [
+        "0x1.fe6430a07202bp+2",
+        "0x1.8d08c75e10946p+1",
+        "-0x1.6673f4d12af14p+3",
+        "0x1.8d601c5ae8f15p+2",
+        "-0x1.102280d292ba7p+0"
+      ],
+      "float32_scalar_values": [
+        7.974864959716797,
+        3.10183048248291,
+        -11.201654434204102,
+        6.208991050720215,
+        -1.0630264282226562
+      ],
+      "float32_little_endian_hex": [
+        "1832ff40",
+        "64844640",
+        "fa3933c1",
+        "0eb0c640",
+        "401188bf"
+      ]
+    }
+  },
+  "configurations": {
+    "yelp_f5": {
+      "dataset": "yelp2018",
+      "filter": 5,
+      "gamma": 0.55,
+      "power": 0.9
+    },
+    "amazon_f2": {
+      "dataset": "amazon-book",
+      "filter": 2,
+      "gamma": 0.5,
+      "power": 0.9
+    },
+    "yelp_f2": {
+      "dataset": "yelp2018",
+      "filter": 2,
+      "gamma": 0.55,
+      "power": 0.9
+    },
+    "amazon_f5": {
+      "dataset": "amazon-book",
+      "filter": 5,
+      "gamma": 0.5,
+      "power": 0.9
+    }
+  },
+  "query": {
+    "Q": 1,
+    "alpha": [
+      0.0
+    ]
+  },
+  "krylov_order": "K=d+1 in the pinned published implementation"
+}

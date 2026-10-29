@@ -1,0 +1,9 @@
+# Python 3.12; replay reference environment, CPU PyTorch, no GPU requirement.
+# The +cpu build is obtained from the official PyTorch CPU wheel index.
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy==2.3.5
+scipy==1.15.3
+torch==2.6.0+cpu
+
+# Parent RSS sampling for the NEW portable performance replay:
+psutil==7.0.0
